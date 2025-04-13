@@ -88,7 +88,7 @@ CREATE TABLE usuarios (
 );
 
 INSERT INTO usuarios (nome, email)
-VALUES ('Usuário Bruno', 'usuario@brunp.com');
+VALUES ('Usuário Bruno', 'usuario@bruno.com.br');
 ```
 
 ---
