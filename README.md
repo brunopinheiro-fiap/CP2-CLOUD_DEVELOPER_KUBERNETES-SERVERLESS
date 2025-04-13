@@ -78,7 +78,7 @@ docker exec -it mysql-container mysql -u root -p
 No terminal MySQL, execute os seguintes comandos:
 
 ```sql
-USE meu_banco;
+USE my_database;
 
 CREATE TABLE usuarios (
   id INT AUTO_INCREMENT PRIMARY KEY,
@@ -88,7 +88,7 @@ CREATE TABLE usuarios (
 );
 
 INSERT INTO usuarios (nome, email)
-VALUES ('Usuário Teste', 'teste@exemplo.com');
+VALUES ('Usuário Bruno', 'usuario@brunp.com');
 ```
 
 ---
