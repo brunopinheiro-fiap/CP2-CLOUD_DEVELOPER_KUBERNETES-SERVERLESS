@@ -185,7 +185,7 @@ Verifique se os dados persistiram:
 
 ```bash
 docker exec -it novo-container-mysql \
-  mysql -u root -p -e "SELECT * FROM meu_banco.usuarios;"
+  mysql -u root -p -e "SELECT * FROM my_database.usuarios;"
 ```
 
 ---
