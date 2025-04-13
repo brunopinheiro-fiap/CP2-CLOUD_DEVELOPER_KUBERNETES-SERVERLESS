@@ -129,8 +129,8 @@ docker login
 Marque as imagens com seu usuário do Docker Hub:
 
 ```bash
-docker tag meu-mysql:v1 brunopinheiro/meu-mysql:v1
-docker tag meu-mysql:v2 brunopinheiro/meu-mysql:v2
+docker tag meu-mysql:v1 bpsbrunopinheiro/meu-mysql:v1
+docker tag meu-mysql:v2 bpsbrunopinheiro/meu-mysql:v2
 ```
 
 ### 📤 Enviando imagens para o Docker Hub
@@ -138,8 +138,8 @@ docker tag meu-mysql:v2 brunopinheiro/meu-mysql:v2
 Envie as imagens para o Docker Hub:
 
 ```bash
-docker push brunopinheiro/meu-mysql:v1
-docker push brunopinheiro/meu-mysql:v2
+docker push bpsbrunopinheiro/meu-mysql:v1
+docker push bpsbrunopinheiro/meu-mysql:v2
 ```
 Link para as imagens no DockerHub
 
