@@ -153,7 +153,7 @@ Para verificar os dados no container, execute:
 
 ```bash
 docker exec -it mysql-container \
-  mysql -u root -p -e "SELECT * FROM meu_banco.usuarios;"
+  mysql -u root -p -e "SELECT * FROM my_database.usuarios;"
 ```
 
 ### 🧹 Parando e removendo o container
