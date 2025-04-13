@@ -24,13 +24,13 @@ meu-microservico/
 Execute o seguinte comando para criar um volume Docker nomeado:
 
 ```bash
-docker volume create mysql_data
+docker volume create mysql_dados
 ```
 
 Para verificar informações do volume, use:
 
 ```bash
-docker volume inspect mysql_data
+docker volume inspect mysql_dados
 ```
 
 #### 📌 Justificativa: Docker Volume vs Bind Mount
@@ -59,7 +59,7 @@ Use o comando abaixo para criar o container MySQL com volume:
 docker run -d \
   --name mysql-container \
   -e MYSQL_ROOT_PASSWORD=minha_senha_forte \
-  -e MYSQL_DATABASE=meu_banco \
+  -e MYSQL_DATABASE=my_database \
   -p 3306:3306 \
   -v mysql_data:/var/lib/mysql \
   mysql:8.0
@@ -141,6 +141,7 @@ Envie as imagens para o Docker Hub:
 docker push brunopinheiro/meu-mysql:v1
 docker push brunopinheiro/meu-mysql:v2
 ```
+Link para as imagens no DockerHub
 
 ---
 
@@ -170,9 +171,9 @@ Crie um novo container utilizando o mesmo volume:
 
 ```bash
 docker run -d \
-  --name mysql-container-novo \
+  --name novo-container-mysql \
   -e MYSQL_ROOT_PASSWORD=minha_senha_forte \
-  -e MYSQL_DATABASE=meu_banco \
+  -e MYSQL_DATABASE=my_database \
   -p 3306:3306 \
   -v mysql_data:/var/lib/mysql \
   mysql:8.0
@@ -183,7 +184,7 @@ docker run -d \
 Verifique se os dados persistiram:
 
 ```bash
-docker exec -it mysql-container-novo \
+docker exec -it novo-container-mysql \
   mysql -u root -p -e "SELECT * FROM meu_banco.usuarios;"
 ```
 
