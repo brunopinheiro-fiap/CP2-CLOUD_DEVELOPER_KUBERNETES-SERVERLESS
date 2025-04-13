@@ -103,6 +103,15 @@ Para listar as imagens criadas, execute:
 docker images | grep meu-mysql
 ```
 
+### 🏷️ Marcando imagens com seu usuário do Docker Hub
+
+Marque as imagens com seu usuário do Docker Hub:
+
+```bash
+docker tag meu-mysql:v1 bpsbrunopinheiro/meu-mysql:v1
+docker tag meu-mysql:v2 bpsbrunopinheiro/meu-mysql:v2
+```
+
 ---
 
 ## ☁️ Parte 4: Docker Hub
@@ -113,15 +122,6 @@ Faça login no Docker Hub com o comando:
 
 ```bash
 docker login
-```
-
-### 🏷️ Marcando imagens com seu usuário do Docker Hub
-
-Marque as imagens com seu usuário do Docker Hub:
-
-```bash
-docker tag meu-mysql:v1 bpsbrunopinheiro/meu-mysql:v1
-docker tag meu-mysql:v2 bpsbrunopinheiro/meu-mysql:v2
 ```
 
 ### 📤 Enviando imagens para o Docker Hub
