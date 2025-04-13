@@ -132,7 +132,7 @@ Envie as imagens para o Docker Hub:
 docker push bpsbrunopinheiro/meu-mysql:v1
 docker push bpsbrunopinheiro/meu-mysql:v2
 ```
-Link para as imagens no DockerHub
+Link para as imagens no DockerHub: https://hub.docker.com/repository/docker/bpsbrunopinheiro/meu-mysql/tags
 
 ---
 
