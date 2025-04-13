@@ -6,15 +6,6 @@ Este projeto tem como objetivo demonstrar o uso de **Docker** para construir, ve
 
 ## 📁 Estrutura do Projeto
 
-A estrutura do projeto é a seguinte:
-
-```
-meu-microservico/
-├── app.py
-├── requirements.txt
-├── Dockerfile
-```
-
 ---
 
 ## 📦 Parte 1: Persistência com Volumes
@@ -196,5 +187,6 @@ Através do uso de volumes Docker, foi possível garantir a persistência dos da
 
 Além disso, foi demonstrada a criação de imagens versionadas, o envio para o Docker Hub e a aplicação de boas práticas de containerização.
 
-Desenvolvido como parte da avaliação prática de CP2
-CLOUD_DEVELOPER_KUBERNETES-SERVERLESS 💙🐳
+Desenvolvido pelo Aluno Bruno Pinheiro como parte da avaliação prática CP2.
+
+Disciplina: CLOUD_DEVELOPER_KUBERNETES-SERVERLESS 💙🐳
